@@ -2,7 +2,7 @@
 
 This project is a simple yet complete user authentication system built using **Flask**, including registration, login with JWT tokens, protected routes, and basic email welcome (printed to console).
 
-## 🚀 Features
+# 🚀 Features
 
 - User Registration with password hashing
 - User Login with JWT Token (expires in 1 hour)
@@ -14,7 +14,7 @@ This project is a simple yet complete user authentication system built using **F
 
 ---
 
-## ⚙️ Tech Stack
+# ⚙️ Tech Stack
 
 - Flask
 - Flask-JWT-Extended
@@ -26,7 +26,7 @@ This project is a simple yet complete user authentication system built using **F
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 project/
 │
@@ -44,16 +44,16 @@ project/
 
 ---
 
-## 🧪 API Endpoints
+# 🧪 API Endpoints
 
-### 🔐 Authentication Routes
+## 🔐 Authentication Routes
 
-#### `POST /auth/register`
+### `POST /auth/register`
 
 Register a new user.
 
 - **Body (JSON)**:
-  ```json
+ ##### json
   {
     "name": "John Doe",
     "email": "john@example.com",
@@ -61,7 +61,7 @@ Register a new user.
   }
 
 
-# Responses :
+##### Responses :
 
 201 Created: User created
 
@@ -73,14 +73,14 @@ POST /auth/login
 Login with email and password.
 
 
-# Body(JSON) :
+##### Body(JSON) :
 
 {
   "email": "john@example.com",
   "password": "securepassword"
 }
 
-Responses :
+##### Responses :
 200 OK: Returns JWT token
 
 401 Unauthorized: Invalid credentials
@@ -90,9 +90,9 @@ Responses :
 GET /api/profile
 Returns user profile data. Requires JWT token in the header.
 
-# header:
+ ##### header:
 Authorization: Bearer <your_token>
- Response:
+ ##### Response:
  {
   "id": 1,
   "name": "John Doe",
@@ -100,7 +100,7 @@ Authorization: Bearer <your_token>
   "created_at": "2024-05-01T12:34:56"
 }
 
-##### Setup & Run:
+# Setup & Run:
 1- Clone the repository:
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
@@ -116,7 +116,7 @@ python app.py
 
 
 
-##### Requirements
+# Requirements
 Create a requirements.txt using:
 pip freeze > requirements.txt
 
